@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PWA">
+    <option name="enabled" value="true" />
+    <option name="wasEnabledAtLeastOnce" value="true" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="19" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+package BackPackPro;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
+public class Main {
+
+    public static int bp(Objects [] items, int w, int v) {
+
+        if (w <= 0 || v <= 0) {
+            return 0;
+        }
+
+        int[][] max = new int[w + 1][v + 1];
+
+        for (int i = 0; i <= w; i++) {
+            max[i][0] = 0;
+        }
+
+        for (int i = 1; i <= w; i++) {
+            for (int j = 0; j <= v; j++) {
+                if (items[i - 1].getWeight() > j) {
+                    max[i][j] = max[i - 1][j];
+                } else {
+                    max[i][j] = Math.max(max[i - 1][j], max[i - 1][j - items[i - 1].getWeight()] + items[i - 1].getValue());
+                }
+            }
+        }
+
+        return max[w][v];
+    }
+
+    public static void main(String[] args) {
+
+        int w = 5;
+        int v = 10;
+
+        List<Objects> items = new ArrayList<>();
+        items.add(new Objects(6, 4));
+        items.add(new Objects(5, 5));
+        items.add(new Objects(3, 6));
+        items.add(new Objects(2, 8));
+        items.add(new Objects(8, 2));
+
+        System.out.println(bp(items.toArray(new Objects[0]), w, v));
+    }
+}
+
+
+
+
+-->
