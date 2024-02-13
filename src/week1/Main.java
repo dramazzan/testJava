@@ -4,13 +4,27 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Shape circle = new Circle(2);
+//        Shape circle = new Circle(2);
+//
+//            System.out.println( circle.Area());
+//
+//        Square sq = new Square(4);
+//
+//            System.out.println(sq.Area());
+//
 
-        System.out.println( circle.Area());
 
-        Square sq = new Square(4);
+//        sq.draw();
 
-        System.out.println(sq.Area());
+
+
+        Shape [] sh = {new Circle(2), new Square(4)};
+
+        for(Shape s : sh){
+            s.Area();
+
+
+        }
 
 
 

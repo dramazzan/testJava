@@ -17,7 +17,7 @@ public class University {
     }
 
 
-    //зависомость
+
     public void studentDetails(){
         for(Student s : students){
             System.out.println(
@@ -25,6 +25,7 @@ public class University {
             );
         }
     }
+
 
 
 }
