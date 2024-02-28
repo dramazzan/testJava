@@ -2,7 +2,7 @@ package Strategy;
 
 public class Square implements Draw{
 
-    public double side;
+    private double side;
 
 
     public Square(){

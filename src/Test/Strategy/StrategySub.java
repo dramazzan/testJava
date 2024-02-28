@@ -1,4 +1,4 @@
-package week3;
+package Test;
 
 public class StrategySub implements Strategy{
 

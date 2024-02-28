@@ -1,4 +1,4 @@
-package week3;
+package Test;
 
 public interface Strategy {
 

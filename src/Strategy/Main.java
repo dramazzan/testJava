@@ -1,5 +1,10 @@
 package Strategy;
 
+import week1.Shape;
+
+import java.util.HashMap;
+import java.util.Map;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -9,18 +14,42 @@ public class Main {
         Draw[] shapes = {new Circle(), new Square(), new Rectangle()};
 
 
-        for (Draw shape : shapes) {
+//       for(Student std : students){
+//
+//           for(Draw shape : shapes){
+//
+//
+//               std.getName();
+//               std.setDraw(shape);
+//               std.execute();
+//
+//
+//
+//           }
+//
+//
+//       }
 
-            for (Student std : students) {
-
-                std.getName();
-                std.setDraw(shape);
-                std.execute();
+        Map<Student , Draw> studentShapeMap = new HashMap<Student , Draw>();
 
 
+
+            for(int i=0 ; i<students.length ; i++){
+                studentShapeMap.put(students[i] , shapes[i]);
             }
-            break;
+
+
+
+        for(Student std : students){
+
+            std.getName();
+            std.setDraw(studentShapeMap.get(std));
+            std.execute();
+
         }
+
+
+
 
 
     }

@@ -8,6 +8,8 @@ public class Student  {
 
     private int age;
 
+    Draw draw;
+
     public Student(){}
 
     public Student(String name, String surname, int age, Draw draw) {
@@ -48,9 +50,6 @@ public class Student  {
     public Draw getDraw() {
         return draw;
     }
-
-    Draw draw;
-
 
     public void setDraw(Draw draw) {
         this.draw = draw;

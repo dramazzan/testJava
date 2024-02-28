@@ -4,9 +4,9 @@ import java.util.concurrent.TransferQueue;
 
 public class Triangle  implements  Draw{
 
-    public double side1;
-    public double side2;
-    public double side3;
+    private double side1;
+    private double side2;
+    private double side3;
 
 
     public Triangle(){

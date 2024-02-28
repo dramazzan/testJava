@@ -2,7 +2,7 @@ package Strategy;
 
 public class Circle implements  Draw {
 
-    public double R;
+    private double R;
 
 
     public Circle(){

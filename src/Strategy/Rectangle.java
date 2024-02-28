@@ -2,11 +2,11 @@ package Strategy;
 
 public class Rectangle implements  Draw {
 
-    public  double side_a;
+    private  double side_a;
 
-    public  double side_b;
+    private  double side_b;
 
-    public Rectangle(){
+    Rectangle(){
 
     }
 
