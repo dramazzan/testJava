@@ -1,20 +1,20 @@
 package Singleton;
 
-
+import java.util.TreeMap;
 
 public class Main {
     public static void main(String[] args) {
-        Singleton s1 = Singleton.getSingleton();
-        Singleton s2 = Singleton.getSingleton();
+        CarSingleton singleton = CarSingleton.getSingleton();
 
-        if(s1 == s2){
-            System.out.println("True");
-        }else{
-            System.out.println("False");
-        }
+        CarWriter writer = new CarWriter(singleton);
+        CarReader reader = new CarReader(singleton);
+
+        Thread writerThread = new Thread(writer);
+        Thread readerThread = new Thread(reader);
+
+        new CarWriter(singleton).start();
+        new CarReader(singleton).start();
+
 
     }
-
-
-
 }
