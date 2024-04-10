@@ -4,12 +4,15 @@ public class Car {
 
     public String brand;
     public String model;
-    public int yearOfRelease;
 
-    public Car(String brand, String model, int yearOfRelease) {
+    public int yearOfRelease;
+    public int price;
+
+    public Car(String brand, String model, int yearOfRelease , int price) {
         this.brand = brand;
         this.model = model;
         this.yearOfRelease = yearOfRelease;
+        this.price = price;
     }
 
     public String getBrand() {
@@ -34,5 +37,13 @@ public class Car {
 
     public void setYearOfRelease(int yearOfRelease) {
         this.yearOfRelease = yearOfRelease;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
     }
 }
